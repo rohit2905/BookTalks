@@ -1,0 +1,18 @@
+{% extends 'layout.html' %} {% block body %}
+
+<center>
+    <hr>
+    <h1 style="font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;"><b>My Reviews</b></h1>
+    <br>
+    <h3>Number of Reviews:&nbsp{{ rset|length }}</h3>
+    <hr>
+</center>
+
+{% if rset %} {% for row in rset %}
+<ul style="list-style-type: none;">
+    <li><b>Book Name :&nbsp</b>{{ row['title'] }}</li>
+    <li><b>Rating:&nbsp </b>{{ row['rating'] }}</li>
+    <li><b>Review:&nbsp </b>{{ row['review'] }}</li>
+    <hr>
+</ul>
+{% endfor %} {% endif %} {% endblock %}

@@ -1,0 +1,5 @@
+D:
+cd \programming\cs50_project1\project1
+set FLASK_APP=application.py
+set FLASK_DEBUG=1
+set DATABASE_URL=postgres://uagzzwnbtssxcc:0f74fa3336ef6a313eb2614f8c81ea9ebcd674ea5d82852a4a7e630b50430b03@ec2-54-217-235-166.eu-west-1.compute.amazonaws.com:5432/dau6tnqgmph094

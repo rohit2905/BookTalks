@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+
+<head>
+    <title>Project1:Books!</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width-device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="sylesheet" href="styles.css">
+
+</head>
+
+<body style="background-color:#999896">
+    <nav class="navbar navbar-expand-lg navbar-light bg-dark">
+        <div class="container-fluid">
+            <span class="navbar-text" style="color: white;">Project1: Books</span>
+            <span class="navbar-text" style="text-align: center;font-family:monospace;color:white;font-size:27px;letter-spacing:4px"><b>BOOKTALKS</b></span>
+            <form class="navbar-form" action="/search" method="post">
+                <div class="input-group mb-3">
+                    <div class="col-xs-3">
+                        <input type="text" class="form-control" placeholder="ISBN, author, book......" autofocus name="search">
+                    </div>
+                    <div class="input-group-append">
+                        <button class="btn btn-primary" type="submit">Search</button>
+                    </div>
+                </div>
+            </form>
+
+            </form>
+        </div>
+
+        <ul class="navbar-nav">
+            <li class="nav-item">
+                <a class="nav-link" href="/loginhome" style="background-color: blue;color:white;border-radius:9px;margin-left:15px;">Home</a>
+            </li>
+        </ul>
+
+        <ul class="navbar-nav">
+            <li>
+                <a class="nav-link" href="/myReview" style="background-color: green;color:white;border-radius:9px;margin-left:15px;">My&nbspReviews</a>
+            </li>
+        </ul>
+
+        <ul class="navbar-nav">
+            <li class="nav-item">
+                <a class="nav-link" href="/logout" style="background-color: red;color:white;border-radius:9px;margin-left:15px;">Logout</a>
+            </li>
+        </ul>
+
+        </div>
+    </nav>
+
+    <div class="container">
+
+        {% block body %} {% endblock %}
+
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+</body>

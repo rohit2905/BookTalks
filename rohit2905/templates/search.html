@@ -1,0 +1,16 @@
+<!-- Returned by /search path in application.py. Result_list is a list of lists with
+data from our database. Below, each inner list (i.e. row) contains: [isbn, title, author, year] -->
+
+{% extends 'layout.html' %} {% block body %}
+<center>
+    <h1>Found {{ result_list|length }} results: </h1><br> {% if result_list|length > 0 %} {% for row in result_list %}
+    <h1><br><a style="background-color:blue; color:white;padding:12px;border-radius:10px;" href="/book/{{ row[4] }}">{{ row[1] }}</a></h1>
+    <br>
+    <h5>ISBN: {{ row[0] }}</h5>
+    <h5>Author: {{ row[2] }}</h5>
+    <h5>Year: {{ row[3] }}</h5>
+    <hr> {% endfor %} {% else %}
+    <i><h1>None Found. Please Try Again...</h1>
+  {% endif %}
+</center>
+{% endblock %}

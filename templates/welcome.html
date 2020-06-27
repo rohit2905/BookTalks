@@ -1,0 +1,146 @@
+<!-- <title>
+    Welcome to BookTalks</title>
+
+<head>
+    <style>
+        #login-form {
+            top: 0.3em;
+            right: 0.3em;
+            position: absolute;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Log in</h1>
+
+    <form action="/" method="post" id="login-form">
+
+        <div class="form-group">
+            <input autocomplete="off" autofocus class="form-control" name="username" placeholder="Username" type="text" />
+        </div>
+
+        <div class="form-group">
+            <input class="form-control" name="password" placeholder="Password" type="password" />
+        </div>
+
+        <button class="btn btn-primary" type="submit">Log in</button>
+
+    </form>
+
+    <h5>
+        Don't have an account? <a href="/register">Sign up</a>.
+    </h5>
+</body> -->
+<title>Project 1: Books</title>
+
+<head>
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+    <!------ Include the above in your HEAD tag ---------->
+    <style>
+        body {
+            font-family: "Lato", sans-serif;
+        }
+        
+        .main-head {
+            height: 150px;
+            background: #FFF;
+        }
+        
+        .sidenav {
+            height: 100%;
+            background-color: #000;
+            overflow-x: hidden;
+            padding-top: 20px;
+        }
+        
+        .main {
+            padding: 0px 10px;
+        }
+        
+        @media screen and (max-height: 450px) {
+            .sidenav {
+                padding-top: 15px;
+            }
+        }
+        
+        @media screen and (max-width: 450px) {
+            .login-form {
+                margin-top: 10%;
+            }
+            .register-form {
+                margin-top: 10%;
+            }
+        }
+        
+        @media screen and (min-width: 768px) {
+            .main {
+                margin-left: 40%;
+            }
+            .sidenav {
+                width: 40%;
+                position: fixed;
+                z-index: 1;
+                top: 0;
+                left: 0;
+            }
+            .login-form {
+                margin-top: 80%;
+            }
+            .register-form {
+                margin-top: 20%;
+            }
+        }
+        
+        .login-main-text {
+            margin-top: 20%;
+            padding: 60px;
+            color: #fff;
+        }
+        
+        .login-main-text h2 {
+            font-weight: 300;
+        }
+        
+        .btn-black {
+            background-color: #000 !important;
+            color: #fff;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="sidenav">
+        <div class="login-main-text">
+            <h1 style="margin-bottom: 0px;"><b>BOOKTALKS</b></h1><br>
+            <p>Search and Post the reviews on your favourite books and also get free recommendation and reviews of all available books</p>
+
+            <h5>
+                Don't have an account? <a href="/register">&nbsp&nbspSign up</a>
+            </h5>
+        </div>
+    </div>
+    <div class="main">
+        <div class="col-md-6 col-sm-12">
+            <div class="login-form">
+                <center>
+                    <h1 style="font-family: monospace;letter-spacing:3.5px"><b>LOGIN</b></h1>
+                </center>
+                <form action="/" method="post">
+                    <div class="form-group">
+                        <label>User Name</label>
+                        <input autocomplete="off" autofocus class="form-control" name="username" placeholder="Username" type="text" />
+                    </div>
+                    <div class="form-group">
+                        <label>Password</label>
+                        <input class="form-control" name="password" placeholder="Password" type="password" />
+                    </div>
+                    <button type="submit" class="btn btn-black">Login</button>
+
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
