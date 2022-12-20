@@ -1,3 +1,3 @@
-# Project 1
+# BOOKTALKS
 
-Web Programming with Python and JavaScript
+An Web application, Encyclopedia of diverse books where users can rate, read, suggest and provide reviews on various books.
